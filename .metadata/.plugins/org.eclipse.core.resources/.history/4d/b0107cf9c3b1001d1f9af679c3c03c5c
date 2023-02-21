@@ -1,0 +1,17 @@
+package com.drezz.configuration;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+public class SecurityConfiguration {
+	
+	public SecurityFilterChain filterChain(HttpSecurity httpSecurity) {
+		httpSecurity.authorizeHttpRequests()
+		
+		return null;
+		
+	}
+	
+}

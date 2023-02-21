@@ -1,0 +1,6 @@
+package com.drezz.entity;
+
+public class ResponseMessage {
+	private String message;
+
+}

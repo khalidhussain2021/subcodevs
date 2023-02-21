@@ -1,0 +1,5 @@
+package com.drezz.entity.service;
+
+public interface StudentFileService {
+	public void save(MultipartFile file);
+}

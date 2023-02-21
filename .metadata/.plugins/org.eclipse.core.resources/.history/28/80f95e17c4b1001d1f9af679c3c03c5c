@@ -1,0 +1,26 @@
+package com.drezz.configuration;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+public class SecurityConfiguration {
+	
+	public SecurityFilterChain filterChain(HttpSecurity httpSecurity) {
+		httpSecurity.
+		csrf().
+		disable().
+		authorizeHttpRequests()
+		.requestMatchers("/home/show")
+		.permitAll()
+		.anyRequest()
+		.authuthenticated()
+		.and()
+		.formLogin();
+				
+		return httpSecurity.build();
+		
+	}
+	
+}

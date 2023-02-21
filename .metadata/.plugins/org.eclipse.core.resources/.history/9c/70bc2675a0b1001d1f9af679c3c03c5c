@@ -1,0 +1,5 @@
+package com.drezz.repository;
+
+public interface StudentFileRepository {
+
+}

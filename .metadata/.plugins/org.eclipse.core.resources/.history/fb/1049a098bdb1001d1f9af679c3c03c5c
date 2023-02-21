@@ -1,0 +1,20 @@
+package com.drezz.SamplePdfReader;
+
+import java.io.File;
+
+import net.sourceforge.tess4j.Tesseract;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Tesseract tesseract = new Tesseract();
+    	tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
+    	File file = new File("C:\\Users\\hussain\\Downloads\\HeathCommunityForm.pdf");
+    	
+    }
+}

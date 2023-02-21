@@ -1,0 +1,20 @@
+package com.drezz.entity;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class StudentPDFData {
+  
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="Stu_id")
+	private long StudentId;
+	
+	@Column(name="Stu_name")
+	private String StudentName;
+	
+	@Column(name = "Stu_fee")
+	private Double StudentFee;
+}

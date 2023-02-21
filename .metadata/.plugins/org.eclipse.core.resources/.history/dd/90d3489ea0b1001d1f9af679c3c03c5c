@@ -1,0 +1,9 @@
+package com.drezz.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.drezz.entity.StudentPDFData;
+
+public interface StudentFileRepository extends JpaRepository<StudentPDFData,Long>{
+
+}
